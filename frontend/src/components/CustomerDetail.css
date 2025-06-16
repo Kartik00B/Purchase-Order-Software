@@ -1,0 +1,269 @@
+/* Body - Soft Gradient Background */
+/*body {*/
+/*    background: linear-gradient(to right, #eef2f3, #fdfbfb);*/
+/*    font-family: 'Segoe UI', Arial, sans-serif;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    min-height: 100vh;*/
+/*}*/
+
+/* Main Container */
+.customer-management {
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end)); /* Gradient background */
+    width: 92vw;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    /*background: white;*/
+    border-radius: 10px;
+    box-shadow: 10px 10px black;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+/* .customer-management:hover {
+    /*transform: scale(1.01);*/
+/* }  */
+
+/* Headings */
+.customer-management h2,
+.customer-management h3 {
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    /* font-size: 2rem; */
+}
+
+/* Form Styling */
+.customer-form {
+    width: 80vw;
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end)); /* Gradient background */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /*margin-bottom: 2rem;*/
+    transition: all 0.3s ease;
+    margin: 0 auto;
+}
+
+.customer-form:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Grid Layout for Form */
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: 14%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.form-group label {
+    color: var(--primary-color);
+    margin-bottom: 5px;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+/* Input Fields */
+.form-input {
+    padding: 0.8rem;
+    /*border: 1px solid #bdc3c7;*/
+    /*border-radius: 6px;*/
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    width: 60%
+}
+
+.form-input:focus {
+    border-color: #1fa3fc;
+    box-shadow: 0 0 5px rgba(77, 171, 234, 0.53);
+    outline: none;
+}
+
+/* Buttons */
+.button-group {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+
+.action-btn {
+    /*display: flex;*/
+    gap: 0.5rem;
+}
+
+.submit-btn,
+.refresh-btn,
+.edit-btn,
+.delete-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    /* transition: all 0.3s ease; */
+}
+
+/* Button Colors */
+.submit-btn {
+    background: var(--primary-color);
+    color: white;
+}
+
+.submit-btn:hover {
+    background: var(--highlight-color);
+    /*transform: scale(1.05);*/
+}
+
+.refresh-btn {
+    background: #7fabaf;
+    border: black solid 2px;
+    color: var(--primary-color);
+    font-weight: 700;
+
+}
+
+.refresh-btn:hover {
+    background: #fcfdfd;
+    /*transform: scale(1.05);*/
+}
+
+.edit-btn {
+    background: #f6950a;
+    color: white;
+    margin-right: 10px;
+    margin-left: 7px;
+    font-weight: 700;
+}
+
+.edit-btn:hover {
+    background: #ff9705;
+}
+
+.delete-btn {
+    background: #fd0902;
+    color: white;
+    margin-left: 10px;
+    font-weight: 700;
+}
+
+.delete-btn:hover {
+    background: #de0601;
+}
+
+/* Table Styles */
+.customer-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    background: white;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.customer-table th,
+.customer-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ecf0f1;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.customer-table th {
+    background: var(--text-color);
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #0b0bfc;
+}
+
+.customer-table tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+.customer-table tr:hover {
+    background-color: #f1f1f1;
+    transition: background 0.3s ease;
+}
+
+
+.uid{
+    max-width: 1%;
+}
+
+.contact {
+    max-width: 2%;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .customer-management {
+        width: 95vw;
+        padding: 1rem;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    .customer-table {
+        display: block;
+        overflow-x: auto;
+    }
+}
+
+
+
+.order-search-input {
+    margin-left: -75%;
+    align-items: start;
+    width: 400px;
+}
+
+
+
+.email-check-btn {
+    background-color: #EA4335; /* Gmail Red */
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background 0.3s ease;
+    font-weight: bold;
+}
+
+.email-check-btn:hover {
+    background-color: #C1351D;
+}
+
+.email-icon {
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    border-radius: 4px;
+    padding: 2px;
+}
+

@@ -1,0 +1,396 @@
+@import './colors.css';
+
+/* Color Palette */
+/* ... existing code ... */
+
+/* General Styling */
+.work-order-container {
+    padding: 40px;
+    font-family: Poppins, sans-serif;
+    color: var(--text-color);
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+    height: auto;
+    margin: 5% auto 0;
+}
+
+/* Title */
+.heading {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Input and Button Styling */
+.input-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.input-field {
+    padding: 12px;
+    width: 300px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.fetch-button {
+    margin-left: 15px;
+    padding: 12px 24px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.fetch-button:hover {
+    background-color: var(--highlight-color);
+}
+
+/* Error message */
+.error-message {
+    color: var(--error-color);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Table Styles */
+.work-order-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table-header {
+    background-color: var(--secondary-color);
+}
+
+.table-header-cell {
+    padding: 12px 18px;
+    border: 1px solid var(--border-color);
+    font-weight: bold;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.table-cell {
+    padding: 12px 18px;
+    border: 1px solid var(--border-color);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.even-row {
+    background-color: var(--no-data-background);
+}
+
+.odd-row {
+    background-color: #f9f9f9;
+}
+
+/* Hover Effects on Table Rows */
+.work-order-table tr:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+/* No Data Cell */
+.no-data-cell {
+    padding: 20px;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+/* Stage Items */
+.stage-item {
+    margin-bottom: 5px;
+}
+
+.rejected-stage {
+    background-color: var(--rejected-background); /* Light red background */
+    color: red; /* Text color red */
+    font-weight: bold;
+}
+
+.rejected-text {
+    color: red;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .work-order-container {
+        padding: 20px;
+    }
+
+    .input-field, .fetch-button {
+        width: 100%;
+    }
+
+    .table-header-cell, .table-cell {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+}
+
+/* Grey background when no data is available */
+.no-data {
+    background-color: var(--no-data-background);
+    color: var(--primary-color);
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Green background for active orders (non-rejected) */
+.active {
+    background-color: var(--active-background);
+    color: #fdfdfd;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Red background for rejected orders */
+.rejected {
+    background-color: var(--rejected-background);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Stage item styling */
+.stage-item {
+    padding: 5px;
+}
+
+.timer-container {
+    font-size: 15px;
+    color: #ffffff;
+    margin-top: 5px;
+    text-align: center;
+}
+
+
+
+.w_back-button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+    margin-top: 2%;
+    margin-left:2%;
+}
+
+.w_back-button:hover {
+    background-color: var(--highlight-color);
+}
+
+
+
+
+
+/* Add other necessary styles for the table and rows */
+
+/*!* WorkOrderDetails.css *!*/
+
+/*!* Basic styling *!*/
+/*.work-order-container {*/
+/*    padding: 20px;*/
+/*    font-family: Arial, sans-serif;*/
+/*}*/
+
+/*.heading {*/
+/*    text-align: center;*/
+/*    margin-bottom: 20px;*/
+/*}*/
+
+/*.input-container {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    margin-bottom: 20px;*/
+/*}*/
+
+/*.input-field {*/
+/*    padding: 10px;*/
+/*    width: 60%;*/
+/*    max-width: 400px;*/
+/*    margin-right: 10px;*/
+/*    border-radius: 5px;*/
+/*    border: 1px solid #ccc;*/
+/*}*/
+
+/*.fetch-button {*/
+/*    padding: 10px 20px;*/
+/*    background-color: #4CAF50;*/
+/*    color: white;*/
+/*    border: none;*/
+/*    border-radius: 5px;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*.error-message {*/
+/*    color: red;*/
+/*    text-align: center;*/
+/*}*/
+
+/*.work-order-table {*/
+/*    width: 100%;*/
+/*    border-collapse: collapse;*/
+/*    margin-top: 20px;*/
+/*}*/
+
+/*.table-header-cell, .table-cell {*/
+/*    padding: 10px;*/
+/*    text-align: left;*/
+/*    border: 1px solid #ddd;*/
+/*}*/
+
+/*.no-data-cell {*/
+/*    text-align: center;*/
+/*    padding: 20px;*/
+/*    background-color: #f9f9f9;*/
+/*}*/
+
+/*!* Add styling for mobile/tablet *!*/
+/*@media (max-width: 768px) {*/
+/*    .input-container {*/
+/*        flex-direction: column;*/
+/*        align-items: center;*/
+/*    }*/
+
+/*    .input-field {*/
+/*        width: 80%; !* Make the input field more responsive *!*/
+/*        margin-right: 0;*/
+/*        margin-bottom: 10px;*/
+/*    }*/
+
+/*    .fetch-button {*/
+/*        width: 80%; !* Make the button size responsive *!*/
+/*    }*/
+
+/*    .work-order-table {*/
+/*        font-size: 14px;*/
+/*    }*/
+
+/*    .table-header-cell, .table-cell {*/
+/*        padding: 8px;*/
+/*    }*/
+
+/*    !* Stack table columns for smaller screens *!*/
+/*    .work-order-table th, .work-order-table td {*/
+/*        display: block;*/
+/*        width: 100%;*/
+/*    }*/
+
+/*    .work-order-table td {*/
+/*        padding: 10px;*/
+/*        margin: 5px 0;*/
+/*        border-bottom: 1px solid #ddd;*/
+/*        font-size: 14px;*/
+/*        background-color: #f9f9f9;*/
+/*    }*/
+
+/*    .work-order-table tr {*/
+/*        display: block;*/
+/*        margin-bottom: 15px; !* Add space between rows *!*/
+/*    }*/
+
+/*    .table-header-cell {*/
+/*        display: none; !* Hide headers in collapsed view *!*/
+/*    }*/
+
+/*    .table-cell {*/
+/*        display: block;*/
+/*        font-weight: bold;*/
+/*        margin-top: 10px;*/
+/*    }*/
+
+/*    .table-cell:before {*/
+/*        content: attr(data-label);*/
+/*        font-weight: normal;*/
+/*        display: inline-block;*/
+/*        margin-bottom: 5px;*/
+/*        text-transform: uppercase;*/
+/*    }*/
+/*}*/
+
+/*@media (max-width: 480px) {*/
+/*    .work-order-container {*/
+/*        padding: 10px;*/
+/*    }*/
+
+/*    .input-container {*/
+/*        padding: 0;*/
+/*    }*/
+
+/*    .input-field {*/
+/*        width: 100%;*/
+/*        padding: 8px;*/
+/*    }*/
+
+/*    .fetch-button {*/
+/*        width: 100%;*/
+/*        padding: 8px;*/
+/*    }*/
+
+/*    .work-order-table {*/
+/*        font-size: 12px;*/
+/*    }*/
+
+/*    .table-header-cell, .table-cell {*/
+/*        padding: 6px;*/
+/*    }*/
+
+/*    .work-order-table td {*/
+/*        font-size: 14px;*/
+/*    }*/
+/*}*/
+
+/*!* Action warning styles *!*/
+/*.action-warning {*/
+/*    padding: 10px;*/
+/*    border-radius: 5px;*/
+/*    margin-top: 10px;*/
+/*    text-align: center;*/
+/*}*/
+
+/*.rejected {*/
+/*    background-color: red;*/
+/*    color: white;*/
+/*}*/
+
+/*.no-data {*/
+/*    background-color: #f0f0f0;*/
+/*}*/
+
+/*.active {*/
+/*    background-color: green;*/
+/*    color: white;*/
+/*}*/
+
+/*.orange {*/
+/*    background-color: orange;*/
+/*    color: white;*/
+/*}*/

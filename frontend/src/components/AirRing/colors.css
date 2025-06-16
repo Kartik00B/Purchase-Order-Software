@@ -1,0 +1,14 @@
+/* colors.css */
+:root {
+    --primary-color: #030303; /* Primary Color */
+    --secondary-color: #F2F2F2; /* Secondary Color */
+    --highlight-color: #f38440; /* Highlight Color */
+    --text-color: #333333; /* Text Color */
+    --error-color: #FF5733; /* Error Color */
+    --border-color: #fdfdfd; /* Border Color */
+    --gradient-start: #6390cb; /* Gradient Start Color */
+    --gradient-end: rgba(255, 216, 124, 0.92); /* Gradient End Color */
+    --active-background: rgb(12 191 17 / 81%); /* Active Background Color */
+    --rejected-background: red; /* Rejected Background Color */
+    --no-data-background: #efefef; /* No Data Background Color */
+}

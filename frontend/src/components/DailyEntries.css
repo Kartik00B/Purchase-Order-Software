@@ -1,0 +1,472 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+/* General Styles */
+.daily_data_entry__container {
+    padding: 20px;
+    background-size: cover;
+}
+
+.daily_data_entry__data-container {
+    margin: 0 auto;
+    width: 90%;
+    border-radius: 8px;
+    box-shadow: 15px 15px #1a1a1a;
+    padding: 20px;
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+    background-size: cover;
+    align-items: center;
+}
+
+.daily_data__print-title {
+    text-align: center;
+    margin: 30px;
+    font-size: 32px;
+}
+
+.qr-code {
+    text-align: center;
+    border-bottom: 1px dotted black;
+}
+
+.daily_data_entry_button {
+    /* display: block; */
+    /* margin: 10px 40px 20px 20px; */
+    padding: 10px 15px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: 700;
+    font-size: 18px;
+    box-shadow: 7px 7px black;
+    margin-left: 80%;
+}
+
+.daily_data_entry_button:hover {
+    background-color: var(--highlight-color); /* Darker green on hover */
+    box-shadow: 0 0 #252525;
+    border: #071b0a 2px solid;
+    transition: transform 0.3s ease, box-shadow 0.4s ease; /* Animation on hover */
+}
+
+.daily_table-container {
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.daily_data_entry__table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: white;
+    overflow-x: auto;
+    height: 70%;
+}
+
+.airplug_table_container {
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+.daily_data_entry__table th {
+    border: 1px solid #000000;
+    padding: 0 10px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.99);
+    font-weight: bold;
+    max-height: 50px;
+    font-size: 16px;
+}
+
+.daily_data_entry__table td {
+    padding: 5px;
+    font-size: 12px;
+}
+
+.daily_party-name-cell,
+.daily_party-name-cells {
+    max-width: fit-content;
+    width: 15%;
+    justify-content: start;
+    border-left: 1px solid black;
+    padding-left: -10px;
+    line-height: 110%;
+    font-size: 12px;
+}
+
+.daily_p_span {
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.daily_units-cell {
+    max-width: 1%;
+    font-size: 12px;
+}
+
+/* .daily_data_entry__table tr {
+    page-break-inside: avoid;
+} */
+
+.daily_party-name-cell.no-bottom-border {
+    border-bottom: none !important;
+}
+
+td.border {
+    border: 1px dotted rgb(48, 57, 35);
+    border-right: 1px dotted black;
+    border-bottom: 1px dotted black;
+    width: auto;
+}
+
+.label_size {
+    margin-left: 30px;
+}
+
+/* Wrapper for the search input and icon */
+.daily_search-container {
+    position: relative;
+    width: 100%;
+}
+
+/* Search input */
+.daily_search-input {
+    width: 30%;
+    border-radius: 9px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(191, 225, 214);
+    font-size: 16px;
+    /* Space for icon */
+    padding: 15px 15px 15px 35px;
+}
+
+/* Search icon */
+.daily_search-icon {
+    position: absolute;
+    left: 20px; /* Position the icon inside the input field */
+    top: 50%;
+    transform: translateY(-50%); /* Vertically center the icon */
+    font-size: 18px; /* Adjust the size as needed */
+}
+
+
+.daily_txt {
+    width: 15%;
+}
+
+
+/* Add solid bottom border for the last entry */
+.qr-code {
+    align-items: center;
+    width: 40px;
+}
+
+table:last-child(td) {
+    border-bottom: 1px solid black;
+}
+
+tbody {
+    border: 1px solid black;
+}
+
+.daily_data_table_title_1.title_1 {
+    text-align: center;
+    margin-left: 200px;
+    font-size: 30px;
+    border: none;
+}
+
+@media (min-width: 329px) and (max-width: 930px) {
+    .daily_data_entry__container {
+        padding: 10px;
+    }
+
+    .daily_data_entry__data-container {
+        padding: 15px;
+    }
+
+    /*.daily_search-container {*/
+    /*  margin-top: -60px;*/
+    /*}*/
+    /*.icon-input {*/
+    /*  margin-top: -20px;*/
+    /*  padding-top: 60px;*/
+    /*}*/
+    .daily_data_entry_button {
+        margin: 0;
+        max-height: 40px;
+    }
+
+    .daily_data_entry_button {
+        padding: 8px 12px;
+        font-size: 16px;
+        width: 130px;
+        margin-left: 18px;
+        margin-top: 10px;
+    }
+
+    .daily_search-input {
+        width: 70%;
+        margin: 5px 0 5px -3px;
+        padding-left: 25px;
+        /*width: auto;*/
+    }
+
+    .daily_search-icon {
+        position: absolute;
+        left: 10px; /* Position the icon inside the input field */
+        top: 28%;
+        transform: translateY(-50%); /* Vertically center the icon */
+        font-size: 18px; /* Adjust the size as needed */
+    }
+
+    .daily_table-container {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    }
+}
+
+/* Ensure the bottom border is visible if the work order spans multiple pages */
+.daily_data_entry__table td.no-top-border {
+    border-top: none !important;
+}
+
+.work-order-row {
+    background-color: #f9f9f9;
+    font-weight: bold;
+}
+
+.daily_party-name-cell {
+    padding: 10px;
+    border-top: 1px solid black;
+}
+
+.force-bottom-border {
+    border-bottom: 1px solid black;
+}
+
+
+@media print {
+    /* .daily_data_entry__table tbody tr { */
+        /* page-break-inside: avoid; Prevent row splitting */
+    /* } */
+
+    .daily_table-container {
+        display: block;
+        overflow: hidden;
+    }
+
+    /* .daily_data_entry__table tbody tr:nth-child(8n) {
+        border-bottom: 1px solid black; /* Add a distinct bottom border to the 8th row */
+    /* } */
+
+    .daily_table-container {
+        break-inside: avoid;
+    }
+
+    .daily_data_entry__table th {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+.daily_party-name-cell {
+    font-weight: bold;
+    padding: 10px;
+}
+
+.no-bottom-border {
+    border-bottom: none;
+}
+
+.daily_units-cell {
+    /*padding: 8px;*/
+    border: 1px solid black;
+}
+
+table {
+    width: 100%;
+    height: 75%;
+}
+
+
+@media print {
+    /* Prevent page break inside the work order row */
+    .work-order-row {
+        /* page-break-inside: avoid; Prevent row splitting */
+        background-color: #f9f9f9;
+        font-weight: bold;
+    }
+
+    /* Make sure that work order number stays together and is not split */
+    /* .daily_data_entry__table tbody tr {
+        page-break-inside: avoid; /* Prevent row splitting */
+    /* } */
+
+    /* Force page break after each work order row to avoid mixing entries */
+    /* .daily_data_entry__table tr:nth-child(n+8) {
+    page-break-before: always; 
+    }  */
+       /* Prevents the table headers from being split across pages */
+    .daily_data_entry__table thead {
+        display: table-header-group; /* Ensures header repeats on each page */
+    }
+
+    /* Ensure the bottom border is visible if work order spans multiple pages */
+    .daily_data_entry__table td.no-top-border {
+        border-top: none !important;
+    }
+
+    /* Make sure that there is a visible border at the bottom of each row */
+    /* .force-bottom-border tbody tr:nth-child(8n) { */
+        /* border-bottom: 1px solid black; */
+    /* } */
+
+    /* .daily_data_entry__table tbody tr:nth-child(8n) { */
+        /* border-bottom: 1px solid black; Add a distinct bottom border to the 8th row */
+    /* } */
+
+    /* Make sure the work order row isn't split */
+    /* .daily_data_entry__table .work-order-row {
+        page-break-before: always; /* Ensure new work order starts on new page */
+    /* } */
+}
+
+
+/*!* Wrapper for the search input and icon *!*/
+/*.daily_search-container {*/
+/*  position: relative;*/
+/*  width: 100%;*/
+/*}*/
+
+/* Search input */
+/*.daily_search-input {*/
+/*  padding: 15px;*/
+/*  width: 80%;*/
+/*  border-radius: 9px;*/
+/*  background-color: rgb(255, 255, 255);*/
+/*  border: 1px solid rgb(191, 225, 214);*/
+/*  font-size: 16px;*/
+/*  padding-left: 35px; !* Space for icon *!*/
+/*}*/
+
+/*!* Search icon *!*/
+/*.daily_search-icon {*/
+/*  position: absolute;*/
+/*  left: 10px; !* Position the icon inside the input field *!*/
+/*  top: 50%;*/
+/*  transform: translateY(-50%); !* Vertically center the icon *!*/
+/*  font-size: 18px; !* Adjust the size as needed *!*/
+/*}*/
+/* Ensure table headers are printed on every page */
+@media print {
+    thead {
+        display: table-header-group;
+    }
+
+    tfoot {
+        display: table-footer-group;
+    }
+
+    /* .daily_data_entry__table {
+        page-break-inside: auto;
+    }
+
+    .daily_data_entry__table tr {
+        page-break-inside: avoid;
+        page-break-after: auto;
+    }
+
+    .daily_data_entry__table thead tr {
+        page-break-inside: avoid;
+        page-break-after: auto;
+    }
+
+    .daily_data_entry__table tbody tr:last-child {
+        page-break-after: auto;
+    } */
+
+    .daily_data_table_title_1 {
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        padding: 10px 0;
+    }
+}
+
+
+
+/* Hide the header by default */
+/*.h-title {*/
+/*    display: none;*/
+/*}*/
+
+/*!* Show the header only when printing *!*/
+/*@media print {*/
+/*    .h-title {*/
+/*        display: table-cell; !* Ensures it displays as a table header cell *!*/
+/*    }*/
+/*}*/
+
+@media print {
+    thead {
+        display: table-header-group;
+    }
+
+    tfoot {
+        display: table-footer-group;
+    }
+
+    .daily_data_entry__table {
+        page-break-inside: auto;
+    }
+
+    .daily_data_entry__table tr {
+        page-break-inside: avoid;
+        page-break-after: auto;
+    }
+
+    .daily_data_entry__table thead tr {
+        page-break-inside: avoid;
+        page-break-after: auto;
+    }
+
+    .daily_data_entry__table tbody tr:last-child {
+        page-break-after: auto;
+    }
+
+    .daily_data_table_title_1 {
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        padding: 10px 0;
+    }
+}
+
+/* PDF Button styling */
+.pdf-controls {
+  margin: 20px 0;
+  text-align: right;
+}
+
+.pdf-download-btn {
+  background: #228B22;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.pdf-download-btn:hover {
+  background: #1C6B1C;
+}
+
+.pdf-download-btn i {
+  margin-right: 8px;
+}

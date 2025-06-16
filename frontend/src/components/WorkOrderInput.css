@@ -1,0 +1,400 @@
+/* Form Container Styles */
+.workorder-main-container {
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+    border-radius: 16px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 32px rgba(3, 3, 3, 0.514);
+    /* border: 1px solid var(--border-color); */
+    width: 90%;
+    min-height: 85vh;
+    margin: 0 auto;
+    color: var(--primary-color);
+}
+.workorder-form-container {
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+    border-radius: 16px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    /* box-shadow: 0 8px 32px rgba(3, 3, 3, 0.514); */
+    /* border: 1px solid var(--border-color); */
+    width: 60%;
+    margin: 0 auto;
+    color: var(--primary-color);
+}
+
+
+.workorder-title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+.workorder-form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    /* margin-bottom: 2rem; */
+    margin-top: 2rem;
+    /* width: 90%; */
+    margin-left: 4.5rem;
+}
+
+.workorder-label {
+    display: block;
+    margin-bottom: 0.8rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.workorder-select,
+.workorder-input {
+    width: 85%;
+    padding: 1rem 1.2rem;
+    border: 2px solid var(--text-color);
+    border-radius: 12px;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.workorder-select:focus,
+.workorder-input:focus {
+    border-color: var(--highlight-color);
+    box-shadow: 0 0 0 4px rgba(246, 151, 10, 0.15);
+    outline: none;
+}
+
+
+
+.workorder-form-field-party {
+    width: 89.2%;
+
+}
+/* Submit Button Styling */
+
+.workorder-submit-container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    /* width: 90%; */
+    margin-top: 2rem;
+}
+
+.workorder-submit-btn {
+    width: 100%;
+    max-width: 200px;
+    padding: 0.5rem 0.5rem;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    /* border: none; */
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    /* text-transform: uppercase; */
+    letter-spacing: 1px;
+    margin-left: 20px;
+    /* margin-right: 50px */
+    
+}
+
+.workorder-submit-btn:hover {
+    transform: translateY(-2px);
+    background-color: var(--highlight-color);
+    color: var(--secondary-color);
+    border: 2px solid var(--primary-color);
+}
+
+
+.workorder-submit-btn1 {
+    width: 100%;
+    max-width: 200px;
+    padding: 0.5rem 0.5rem;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    /* border: none; */
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    /* text-transform: uppercase; */
+    letter-spacing: 1px;
+    margin-left: 20px;
+    margin-right: 50px
+    
+}
+
+.workorder-submit-btn1:hover {
+    transform: translateY(-2px);
+    background-color: var(--highlight-color);
+    color: var(--secondary-color);
+    border: 2px solid var(--primary-color);
+}
+
+/* Table Styles */
+.workorder-table-container {
+    margin-top: 3rem;
+    /* overflow-x: auto; */
+    /* border-radius: 12px; */
+    box-shadow: 0 4px 20px rgba(3, 3, 3, 0.08);
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    border-bottom: 2px solid var(--primary-color);
+    /* border-right: 2px solid var(--primary-color); */
+    margin-right: 22.5%;
+}
+
+.workorder-table {
+    width: 110%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    background: var(--border-color);
+    font-size: 0.95rem;
+    border: 2px solid var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+
+/* Table Header */
+.workorder-table thead tr {
+    background:var(--secondary-color);
+}
+
+.workorder-table th {
+    color: var(--primary-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 1.2rem 1.5rem;
+    text-align: left;
+    position: relative;
+    font-size: 1rem;
+    border-bottom: 2px solid var(--primary-color);
+    border-right: 2px solid var(--primary-color);
+}
+
+/* Table Body */
+.workorder-table tbody tr {
+    transition: all 0.3s ease;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.workorder-table tbody tr:hover {
+    background: rgba(246, 151, 10, 0.05);
+    transform: translateY(-1px);
+}
+
+.workorder-table td {
+    padding: 1.2rem 1.5rem;
+    color: var(--primary-color);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* Revenue Column */
+.workorder-table td.revenue-cell {
+    /* font-weight: 600; */
+    color: rgb(22, 106, 22);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+/* Total Revenue Section */
+.workorder-total-revenue {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: rgb(124, 251, 124);
+    color: var(--primary-color);
+    border-radius: 12px;
+    border: 2px solid var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: 20%;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.workorder-total-revenue-amount {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+/* Error Message */
+.workorder-error {
+    color: var(--error-color);
+    background: rgba(255, 87, 51, 0.1);
+    padding: 1.2rem;
+    border-radius: 12px;
+    margin: 1.2rem 0;
+    text-align: center;
+    border-left: 4px solid var(--error-color);
+}
+
+/* Empty State */
+.workorder-table-empty {
+    text-align: center;
+    padding: 3rem;
+    color: var(--text-color);
+    background: var(--no-data-background);
+}
+
+/* Scrollbar Styling */
+.workorder-table-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.workorder-table-container::-webkit-scrollbar-track {
+    background: var(--secondary-color);
+    border-radius: 4px;
+}
+
+.workorder-table-container::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+    border-radius: 4px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .workorder-form-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .workorder-form-container {
+        padding: 1.5rem;
+    }
+
+    .workorder-total-revenue {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+}
+
+/* Status Indicators */
+.workorder-status-active {
+    color: var(--active-background);
+}
+
+.workorder-status-rejected {
+    color: var(--rejected-background);
+}
+
+/* Loading State */
+.workorder-loading {
+    text-align: center;
+    padding: 2rem;
+    color: var(--highlight-color);
+    background: var(--no-data-background);
+    border-radius: 12px;
+}
+
+
+
+
+
+.party-details {
+    background: rgba(255, 255, 255, 0.886);
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    font-size: 24px;
+    width: 61.8%;
+    margin-left: 18.5%;
+}
+
+.party-details p {
+    margin: 6px 0;
+    padding: 4px 10px;
+    font-weight: 700;
+    color: #021039;
+    /* font-weight: 500; */
+}
+
+.party-details strong {
+    color: #1d1c1c;
+    font-size: 22px;
+}
+
+
+
+
+
+
+
+
+
+/* Table Styles Update */
+.workorder-table-row-set {
+    background-color: rgba(var(--gradient-start), 0.05);
+}
+
+.workorder-table-row-component {
+    background-color: rgba(var(--gradient-end), 0.05);
+}
+
+.price-cell,
+.revenue-cell {
+    font-family: monospace;
+    text-align: right;
+    font-weight: 500;
+}
+
+.revenue-cell {
+    color: var(--active-background);
+    font-weight: 600;
+}
+
+/* Summary Section */
+.workorder-summary {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: var(--secondary-color);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.workorder-summary-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.workorder-summary-item:last-child {
+    border-bottom: none;
+}
+
+.workorder-summary-item span:first-child {
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .workorder-summary {
+        margin-top: 1.5rem;
+        padding: 1rem;
+    }
+
+    .workorder-summary-item {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+}

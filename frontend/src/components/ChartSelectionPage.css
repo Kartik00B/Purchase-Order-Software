@@ -1,0 +1,178 @@
+/* Main container - Full height with flexbox */
+.chart-selection-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures button stays at bottom */
+    align-items: center;
+    height: 90vh; /* Makes it fit the full screen */
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 1.2rem;
+}
+
+/* Dropdown container */
+.dropdown-container {
+    text-align: center;
+    margin-bottom: 28%;
+    margin-top: -2%;
+
+}
+
+.dropdown-container h2 {
+    font-size: 3.5rem;
+    color: var(--text-color);
+    margin-bottom: 25px;
+}
+
+/* Dropdown */
+.dropdown {
+    width: 350px;
+    padding: 12px;
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+    border-radius: 8px;
+    background: var(--text-color);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+/* Chart options container */
+.chart-options-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Chart options header */
+.chart-options-header {
+    font-size: 4rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Chart grid layout */
+.chart-options {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Default: 4 columns */
+    gap: 30px;
+    width: 90%;
+    max-width: 1300px;
+    font-size: 2.5rem;
+}
+
+/* Chart card */
+.chart-card {
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+    color: var(--primary-color);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 2px solid #ccc;
+}
+
+.chart-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+}
+
+.chart-card-title {
+    font-size: 2.6rem;
+}
+
+/* View Chart button positioned at bottom */
+.view-chart-container {
+    margin-top: auto; /* Pushes it to the bottom */
+    padding-bottom: 20px;
+}
+
+
+.back-button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-left:-80%;
+    margin-top: 2%;
+}
+
+.back-button:hover {
+    background-color: var(--highlight-color);
+}
+
+
+.chart-button {
+    background: var(--primary-color);
+    color: #fdfdfd;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin-top: auto; /* Ensures button is pushed to bottom */
+}
+
+.chart-button:hover {
+    background: var(--highlight-color);
+    transform: translateY(-3px);
+    box-shadow: 0 0 #252525;
+    border: #071b0a 2px solid;
+    transition: transform 0.3s ease, box-shadow 0.4s ease; /* Animation on hover */
+}
+
+.chart-button:active {
+    transform: translateY(2px);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+    .chart-options {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .chart-options {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .chart-options {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.available {
+    background-color: #e8f5e9;
+    border-color: #4caf50;
+}
+
+.disabled {
+    background-color: #ffebee;
+    border-color: #ef5350;
+    opacity: 0.7;
+}
+
+.unavailable {
+    color: #ef5350;
+    font-weight: bold;
+    display: block;
+    margin-top: 1rem;
+}

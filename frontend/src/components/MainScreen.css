@@ -1,0 +1,290 @@
+/* MainScreen.css */
+
+
+/* MainScreen.css */
+
+.airplug-main {
+    background: linear-gradient(136deg, var(--gradient-start), var(--gradient-end));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;    font-family: "Poppins", sans-serif;
+    height: 96vh;
+    width: 98vw;
+    border-radius: 25px;
+    overflow-y: hidden;
+    box-shadow: 15px 15px var(--primary-color); /* Use primary color for shadow */
+    position: absolute;
+    margin-left: 5px;
+}
+
+/* Style for the main screen container */
+.main-screen {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 20px; /* Space between cards */
+    padding: 10px 10px 30px 40px;
+    /* background: linear-gradient(360deg, var(--gradient-start), var(--gradient-end)); */
+    min-height: 50vh; /* Full height */
+    width: 65%;
+    margin: 50px 2px 0 0;
+}
+
+.airplug-main h1 {
+    color: var(--rejected-background); /* Rejected Background Color */
+    /* Use error color */
+    margin-top: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 55px;
+    margin-bottom: -20px;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.sub-screen {
+    margin-left: 45px;
+    margin-top: -40px;
+    /* margin-top: 40px; */
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-left: 90px;
+
+}
+
+.card {
+    /*background: linear-gradient(0deg, var(--gradient-start), var(--gradient-end)); !* Use gradient colors *!*/
+    backdrop-filter: blur(8px); /* Softer blur */
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    margin-bottom: 35px;
+    max-width: 430px;
+    border: 3px solid var(--text-color); /* Use border color */
+}
+
+/* Hover effect for cards */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: -10px -10px rgba(14, 14, 14, 0.2);
+    border: 5px solid var(--primary-color); /* Use highlight color */
+}
+
+/* Style for card icon */
+.card-icon {
+    font-size: 100px; /* Icon size */
+    margin-bottom: 5px; /* Space below the icon */
+}
+
+/* Style for card title */
+.card-title {
+    font-size: 28px; /* Title font size */
+    color: #1a1616; /* Title color */
+    font-weight: bold; /* Bold text */
+    text-align: center; /* Center text */
+    margin-top: -10px;
+}
+
+.sub-screen1 {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    gap: 20px;
+    margin: 20px 30px;
+}
+
+.sub-btn {
+    /* background: linear-gradient(0deg, var(--gradient-start), var(--gradient-end)); */
+    padding: 10px 15px 10px 10px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2px solid black;
+    /*box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);*/
+    flex-direction: column;
+    font-size: 20px;
+    color: var(--primary-color);
+    font-weight: 700;
+    width: 200px;
+    box-shadow: 10px 10px black;
+    height: 70px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation on hover */
+
+}
+
+/* Hover effect for buttons */
+.sub-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive adjustments below 780px */
+@media (min-width: 479px) and (max-width: 780px) {
+    /* Stack sub-screen below main screen */
+    .airplug-main {
+        /*display: flex;*/
+        flex-direction: column;
+        align-items: center; /* Center the contents */
+        height: 90%;
+        width: 93%;
+        margin-left: -2px;
+    }
+
+    .main-screen {
+        width: 100%; /* Full width for small screens */
+        margin: 10px; /* Adjust margin */
+    }
+
+    .sub-screen {
+        margin-left: -10px;
+        margin-top: 0;
+        /*margin-right: -10px;*/
+        width: 200px;
+    }
+
+    .main-container {
+        display: flex;
+        /*justify-content: center;*/
+        gap: 5px;
+        margin-left: auto;
+        margin-top: 20px;
+    }
+
+
+    .airplug-main h1 {
+        color: #1a1616;
+        margin-left: 4.5%;
+        margin-top: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-size: 45px;
+        margin-bottom: -20px;
+    }
+
+
+    .sub-screen1 {
+        order: 1; /* Move below the main screen */
+        /*margin: 20px; !* Center sub-screen below *!*/
+        width: 50%; /* Full width */
+        /*margin-left: -5px;*/
+    }
+
+    /*.sub-screen {*/
+    /*    max-width: 100%;*/
+    /*    margin-top: -5px;*/
+    /*}*/
+    /* Make fonts and image sizes smaller */
+    .card-title {
+        font-size: 18px; /* Smaller font for card title */
+    }
+
+    .card-icon {
+        font-size: 70px; /* Reduce icon size */
+    }
+
+    .sub-btn {
+        font-size: 16px; /* Smaller button font */
+        height: 60px; /* Reduce height */
+        width: 150px;
+    }
+
+    .airplug-main h1 {
+        font-size: 28px; /* Smaller header font */
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+/* Responsive adjustments below 480px */
+@media (max-width: 480px) {
+    .main-screen {
+        grid-template-columns: 1fr; /* Single column layout */
+        gap: 15px;
+        padding: 10px;
+        margin-left: 10px;
+    }
+
+    .airplug-main {
+        /*display: flex;*/
+        flex-direction: column;
+        align-items: center; /* Center the contents */
+        height: 90%;
+        width: 93%;
+        margin-left: -2px;
+    }
+
+    .main-screen {
+        width: 100%; /* Full width for small screens */
+        margin: 10px; /* Adjust margin */
+    }
+
+    .sub-screen {
+        margin-left: -50px;
+        margin-top: 0;
+        /*margin-right: 10px;*/
+        width: 200px;
+    }
+
+    .main-container {
+        display: flex;
+        /*justify-content: center;*/
+        gap: 5px;
+        margin-left: auto;
+        margin-top: 20px;
+    }
+
+
+    .airplug-main h1 {
+        color: #a10505;
+        margin-left: 4.5%;
+        margin-top: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-size: 45px;
+        margin-bottom: -20px;
+    }
+
+
+    .sub-screen1 {
+        order: 1; /* Move below the main screen */
+        /*margin: 20px; !* Center sub-screen below *!*/
+        width: 50%; /* Full width */
+        /*margin-left: -5px;*/
+    }
+
+    /*.sub-screen {*/
+    /*    max-width: 100%;*/
+    /*    margin-top: -5px;*/
+    /*}*/
+    /* Make fonts and image sizes smaller */
+    .card-title {
+        font-size: 18px; /* Smaller font for card title */
+    }
+
+    .card-icon {
+        font-size: 70px; /* Reduce icon size */
+    }
+
+    .sub-btn {
+        font-size: 16px; /* Smaller button font */
+        height: 60px; /* Reduce height */
+        width: 150px;
+    }
+
+    .airplug-main h1 {
+        font-size: 28px; /* Smaller header font */
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+
+
+

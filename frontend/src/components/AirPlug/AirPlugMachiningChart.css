@@ -1,0 +1,1230 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+/* General Styles */
+.airplug_machining_data_entry__container {
+    padding: 20px;
+    background-size: cover;
+    font-family: "Poppins", sans-serif;
+    /*width: auto;*/
+    height: 90vh;
+    margin: 0 0 -15px auto;
+}
+
+/* .airplug_machining_data_entry__data-container {
+    margin: 0 auto;
+    max-width: 1340px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px;
+    padding: 20px;
+    background-size: cover;
+    font-size: 28px;
+    /*align-items: center;*/
+/* } */
+
+
+.airplug_machining-work-order-range-title1 {
+    text-align: center;
+    border: none;
+    outline: none;
+    font-size: 46px;
+    padding-bottom: 5px;
+}
+
+/*.title_1 {*/
+/*    text-align: center;*/
+/*    font-size: 32px;*/
+/*    border: none;*/
+/*    margin: 0 auto;*/
+/*    !*max-width: 100%;*!*/
+/*    !*background-color:*!*/
+/*    !*background-color: #bae6e8; !* Green background with 30% opacity *!*!*/
+/*    !*ap_m_gborder: 2px solid #bae6e8;*!*/
+/*    !*ap_m_gborder:  black 1px solid;*!*/
+/*}*/
+
+
+/*span.t-header {*/
+/*    !*text-align: center;*!*/
+/*    !*max-width: 903%;*!*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    flex-direction: row;*/
+/*    !*margin-left: 20px;*!*/
+/*}*/
+
+
+/*.airplug_machining_data_table_title2 {*/
+/*    text-align: center;*/
+/*    font-size: 32px;*/
+/*    margin-top: -10px;*/
+/*    margin-bottom: 15px;*/
+/*}*/
+.airplug_machining_data_entry_button {
+    /* display: block; */
+    /* margin: 10px 40px 20px 20px; */
+    padding: 10px 15px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: 700;
+    font-size: 18px;
+    margin-left: 83%;
+    /* box-shadow: 7px 7px black; */
+}
+
+.airplug_machining_data_entry_button:hover {
+    background-color: var(--highlight-color); /* Darker green on hover */
+    box-shadow: 0 0 #252525;
+    border: #071b0a 2px solid;
+    transition: transform 0.3s ease, box-shadow 0.4s ease; /* Animation on hover */
+}
+
+.airplug_machining_table_container {
+    padding: 20px;
+    background: linear-gradient(130deg, var(--gradient-start), var(--gradient-end)); /* Use gradient colors */
+    background-size: cover;
+    font-family: "Poppins", sans-serif;
+    box-shadow: 10px 10px #171717;
+    border-radius: 15px;
+    height: 92vh;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: -20px;
+}
+
+.airplug_machining_search-container {
+    position: relative;
+    width: 100%;
+}
+
+
+.qr-code {
+    text-align: center;
+    border-bottom: 1px dotted black;
+}
+
+.airplug_machining_data_entry__table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: white;
+    /*text-align: center;*/
+    overflow-x: auto;
+
+
+}
+
+.airplug_machining_table-container {
+    overflow-x: auto;
+    overflow-y: auto;
+    max-height: 85vh;
+    /* margin-top: -20px; */
+}
+
+
+tr.t-head {
+    position: sticky;
+    top: 0;
+    border: 1px solid black;
+    /*background-color: rgb(251, 251, 251);*/
+    z-index: 5;
+}
+
+.airplug_machining_data_entry__table th {
+    /* border: 1px solid #000000; */
+    /*padding: 5px;*/
+    background-color: rgb(255, 255, 255);
+    font-weight: bold;
+    max-height: 50px;
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 26px;
+
+}
+
+.airplug_machining_data_entry__table td {
+    padding: 2px;
+    line-height: 120%;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+
+.history-search {
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid black;
+    /*width: 15%;*/
+    margin-left: 2%;
+
+}
+
+
+
+
+.airplug_machining_party-name-cell, .airplug_machining_party-name-cells {
+    max-width: fit-content;
+    justify-content: start;
+    border-left: 1px solid black;
+    padding-left: -10px;
+}
+
+.airplug_machining_p_span {
+    /* font-size: 14px; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.airplug_machining_data_entry__table tr {
+    page-break-inside: avoid;
+    text-align: start;
+}
+
+.airplug_machining_party-name-cell.no-bottom-border {
+    border-bottom: none !important;
+    width: 17px;
+}
+
+.airplug_machining_data_entry__table thead {
+    display: table-header-group; /* Makes the header repeat on every page */
+}
+
+td.ap_m_gborder {
+    border: 1px dotted rgb(48, 57, 35);
+    border-right: 1px dotted black;
+    border-bottom: 1px dotted black;
+    width: 30px;
+    word-wrap: break-word;
+    word-break: break-word;
+    white-space: pre-wrap;
+    /*width: auto;*/
+    overflow-wrap: break-word;
+}
+
+
+.airplug_machining_search-input {
+    width: 30%;
+    border-radius: 9px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(191, 225, 214);
+    font-size: 16px;
+    /* Space for icon */
+    padding: 15px 15px 15px 35px;
+}
+
+/* Search icon */
+.airplug_machining_search-icon {
+    position: absolute;
+    left: 10px; /* Position the icon inside the input field */
+    top: 25%;
+    transform: translateY(-50%); /* Vertically center the icon */
+    font-size: 18px; /* Adjust the size as needed */
+}
+
+/* Add solid bottom ap_m_gborder for the last entry */
+td.ap_m_gborder.blank {
+    width: 85px;
+    /*align-items: center;*/
+    /*justify-content: center;*/
+    /*width: auto;*/
+}
+
+th.ap_m_gborder {
+    word-wrap: break-word;
+    border: black solid 1px;
+    font-size: 16px;
+    height: 30px;
+}
+
+td.ap_m_gborder.rmark {
+    width: 70px;
+}
+
+.qr-code {
+    align-items: center;
+    align-content: center;
+    width: 70px;
+}
+
+table:last-child(td) {
+    border-bottom: 1px solid black;
+}
+
+tbody {
+    border: 1px solid #a8a5a5;
+}
+
+/* Responsive Layout */
+/*@media (min-width: 488px) {*/
+/*    .airplug_machining_data_entry__container {*/
+/*        padding: 10px;*/
+/*    }*/
+
+/*    .airplug_machining_data_entry__data-container {*/
+/*        padding: 15px;*/
+/*    }*/
+
+/*    !*.airplug_machining_search-container {*!*/
+/*    !*    margin-top: -60px;*!*/
+/*    !*}*!*/
+
+/*    .icon-input {*/
+/*        margin-top:-20px;*/
+/*        padding-top: 60px;*/
+/*    }*/
+
+/*    .airplug_machining_data_entry_button {*/
+/*        padding: 8px 12px;*/
+/*        font-size: 16px;*/
+/*        width: 130px;*/
+/*        margin-left: 18px;*/
+/*        margin-top: 10px;*/
+/*    }*/
+
+/*    .airplug_machining_data_entry__table th,*/
+/*    .airplug_machining_data_entry__table td{*/
+/*        font-size: 14px;*/
+/*        !*width:auto;*!*/
+/*    }*/
+
+/*    .blank {*/
+/*        width: auto;*/
+/*    }*/
+
+/*    .airplug_machining_search-input {*/
+/*        width: 70%;*/
+/*        margin: 5px 0;*/
+/*        margin-left: -3px;*/
+/*        padding-left: 25px;*/
+/*        !*width: auto;*!*/
+/*    }*/
+
+/*    .airplug_machining_search-icon {*/
+/*        position: absolute;*/
+/*        left: 10px; !* Position the icon inside the input field *!*/
+/*        top: 28%;*/
+/*        transform: translateY(-50%); !* Vertically center the icon *!*/
+/*        font-size: 18px; !* Adjust the size as needed *!*/
+/*    }*/
+/*}*/
+
+/*!* Mobile Friendly Table *!*/
+/*@media (max-width: 480px) {*/
+/*    .daily_table-container {*/
+/*        overflow-x: scroll;*/
+/*    }*/
+
+/*    .airplug_machining_data_entry__table {*/
+/*        width: 100%;*/
+/*    }*/
+/*}*/
+
+.no-top-border {
+    border-top: none !important;
+}
+
+.airplug_machining_party-name-cell.no-bottom-border {
+    border-bottom: none !important;
+}
+
+.daily_txt {
+    border: 1px solid black;
+}
+
+input:nth-child(5) {
+    border-right: 1px solid black;
+}
+
+.airplug_machining_search-input {
+    padding-left: 35px;
+}
+
+/* Ensure the bottom ap_m_gborder is visible if the work order spans multiple pages */
+.airplug_machining_data_entry__table td.no-top-border {
+    border-top: none !important;
+}
+
+.work-order-row {
+    background-color: #f9f9f9;
+    font-weight: bold;
+}
+
+.airplug_machining_party-name-cell {
+    padding: 10px;
+    border-top: 1px solid black;
+}
+
+.force-bottom-ap_m_gborder {
+    border-bottom: 1px solid black;
+}
+
+@media print {
+    .airplug_machining_data_entry__table tbody tr {
+        page-break-inside: avoid; /* Prevent row splitting */
+    }
+
+    .airplug_machining_data_entry__table th{
+        font-size: 22px;
+    }
+    th.ap_m_gborder {
+      font-size: 10px;   
+    }
+
+    /*.airplug_machining_table-container {*/
+    /*    display: block;*/
+    /*    overflow: hidden*/
+    /*}*/
+    /* .airplug_machining_data_entry__table tbody tr:nth-child(8n) {
+        border-bottom: 1px solid black; /* Add a distinct bottom ap_m_gborder to the 8th row */
+    /* } */
+
+    /* .airplug_machining_table-container {
+        /*break-inside: avoid;*/
+    /* .airplug_machining_data_entry__table tbody tr:nth-child(7n+1) {
+        page-break: always; /* Start a new page after every 8th entry */
+    tr.t-head {
+        position: static;
+        /*top: 0;*/
+        border: 1px solid black;
+        /*background-color: rgb(251, 251, 251);*/
+        /*z-index: 5;*/
+    }
+    th.ap_m_gborder {
+        word-wrap: break-word;
+        border: black solid 1px;
+        font-size: 10px;
+    }
+}
+
+.airplug_machining_party-name-cell {
+    font-weight: bold;
+    padding: 10px;
+}
+
+.no-bottom-border {
+    border-bottom: none;
+}
+
+/*.daily_units-cell {*/
+/*    padding: 8px;*/
+/*    ap_m_gborder: 1px solid black;*/
+/*}*/
+
+table {
+    width: 100%;
+    height: 75%;
+    /*ap_m_gborder: black 1px solid;*/
+}
+
+/*!* General table styles *!*/
+/*.airplug_machining_data_entry__table th, .airplug_machining_data_entry__table td {*/
+/*    padding: 8px;*/
+/*    text-align: left;*/
+/*    !*ap_m_gborder: 1px solid #ddd;*!*/
+/*}*/
+
+
+@media (min-width: 329px) and (max-width: 930px) {
+    .airplug_machining_data_entry__container {
+        padding: 10px;
+    }
+
+    .airplug_machining_data_entry__data-container {
+        padding: 15px;
+    }
+
+    /*.daily_search-container {*/
+    /*  margin-top: -60px;*/
+    /*}*/
+    /*.icon-input {*/
+    /*  margin-top: -20px;*/
+    /*  padding-top: 60px;*/
+    /*}*/
+    .airplug_machining_data_entry_button {
+        margin: 0;
+        max-height: 40px;
+    }
+
+    .airplug_machining_data_entry_button {
+        padding: 8px 12px;
+        font-size: 16px;
+        width: 130px;
+        margin-left: 18px;
+        margin-top: 10px;
+    }
+
+    .airplug_machining_search-input {
+        width: 70%;
+        margin: 5px 0 5px -3px;
+        padding-left: 25px;
+        /*width: auto;*/
+    }
+
+    .airplug_machining_search-icon {
+        position: absolute;
+        left: 10px; /* Position the icon inside the input field */
+        top: 28%;
+        transform: translateY(-50%); /* Vertically center the icon */
+        font-size: 18px; /* Adjust the size as needed */
+    }
+
+    .airplug_machining_table-container {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    }
+}
+
+/* Ensure the bottom ap_m_gborder is visible if the work order spans multiple pages */
+.airplug_machining_data_entry__table td.no-top-border {
+    border-top: none !important;
+}
+
+.work-order-row {
+    background-color: #f9f9f9;
+    font-weight: bold;
+}
+
+.airplug_machining_party-name-cell {
+    padding: 10px;
+    border-top: 1px solid black;
+}
+
+.force-bottom-border {
+    border-bottom: 1px solid black;
+}
+
+
+/*.airplug_machining_data_container {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    !*height: 100vh; !* Adjust height as needed *!*!*/
+/*}*/
+.airplug_machining-work-order-range-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /*height: 100vh; !* Adjust height as needed *!*/
+    width: 100%;
+    flex-wrap: wrap;
+
+}
+
+.airplug_machining-work-order-range-section {
+    padding: 20px;
+    background-color: rgba(244, 244, 244, 0); /* Light background for contrast */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.65); /* Add some shadow for better visuals */
+    width: 70%; /* Adjust width as needed */
+    /*max-width: 1400px; !* Ensure it doesn't get too large on wider screens *!*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 15px;
+    /*margin-left: 25%;*/
+    max-height: 25%;
+    flex-wrap: wrap;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+/* .airplug_machining-work-order-range-inputs {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Space between the inputs */
+    /* align-items: center;
+    padding: 5px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+} */
+
+.airplug_machining-work-order-range-section input {
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid var(--text-color);
+    border-radius: 4px;
+    /*width: 28%; !* Adjust width to make them side-by-side *!*/
+    box-sizing: border-box; /* Ensures padding does not affect width */
+    margin-left: 10px;
+}
+
+.airplug_machining-work-order-range-inputs input:focus {
+    border: 2px solid var(--primary-color);
+}
+
+.airplug_machining-work-order-range-section button {
+    padding: 12px 20px;
+    background-color: var(--primary-color); /* Green background for the button */
+    color:var(--secondary-color);
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 7px 7px #222222;
+    font-weight: bold;
+    /* margin-top:30px; */
+}
+
+.airplug_machining-work-order-range-section button:hover {
+    background-color: var(--highlight-color); /* Darker green on hover */
+    box-shadow: 0 0 #252525;
+    border: #071b0a 2px solid;
+    transition: transform 0.3s ease, box-shadow 0.4s ease; /* Animation on hover */
+}
+
+
+/*!* General Container Styling *!*/
+/*.airplug_machining_data_entry__container {*/
+/*    font-family: 'Arial', sans-serif;*/
+/*    padding: 20px;*/
+/*    !*background: linear-gradient(135deg, #e0f7fa, #e0f2f1);*!*/
+/*    height: 90vh;*/
+/*}*/
+
+/*!* Header Styling *!*/
+/*h3 {*/
+/*    color: #071715;*/
+/*    font-weight: bold;*/
+/*    margin-bottom: 15px;*/
+/*}*/
+
+/*!* Card-like UI for Date Selector *!*/
+/*.date-range-container {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    flex-direction: column;*/
+/*    !*margin-top: 15%;*!*/
+/*}*/
+
+/*.date-range-section {*/
+/*    background: #ffffff;*/
+/*    border-radius: 12px;*/
+/*    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);*/
+/*    padding: 20px;*/
+/*    max-width: 800px;*/
+/*    width: 100%;*/
+/*    height: 30vh;*/
+/*    margin: 20px auto;*/
+/*    animation: fadeIn 1s ease-in-out;*/
+/*    align-items: center;*/
+/*    display: flex;*/
+/*    justify-content: space-evenly;*/
+/*    !*padding-top: 20px;*!*/
+
+
+/*}*/
+
+/*.date-range-inputs label {*/
+/*    font-size: 18px;*/
+/*    color: #004d40;*/
+/*    margin-right: 10px;*/
+/*}*/
+
+/*.date-range-inputs input[type="date"] {*/
+/*    padding: 8px;*/
+/*    border: 1px solid #004d40;*/
+/*    border-radius: 8px;*/
+/*    margin: 5px 10px;*/
+/*}*/
+
+/*.date-range-inputs button {*/
+/*    background-color: #00796b;*/
+/*    color: white;*/
+/*    border: none;*/
+/*    border-radius: 8px;*/
+/*    padding: 8px 16px;*/
+/*    cursor: pointer;*/
+/*    transition: all 0.3s ease;*/
+/*}*/
+
+/*.date-range-inputs button:hover {*/
+/*    background-color: #004d40;*/
+/*    transform: scale(1.05);*/
+/*}*/
+
+/*!* Table Animation and Styling *!*/
+/*.airplug_machining_table-container {*/
+/*    margin-top: 30px;*/
+/*    animation: slideUp 1s ease-in-out;*/
+/*    border-collapse: collapse;*/
+/*}*/
+
+/*.airplug_machining_data_entry__table {*/
+/*    width: 100%;*/
+/*    background: #ffffff;*/
+/*    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*/
+/*    border-radius: 8px;*/
+/*    overflow: hidden;*/
+/*}*/
+
+/*.airplug_machining_data_entry__table th {*/
+/*    background-color: rgba(251, 251, 251, 0.99);*/
+/*    color: #061707;*/
+/*    padding: 12px;*/
+/*    text-align: center;*/
+/*}*/
+
+/*.airplug_machining_data_entry__table td {*/
+/*    text-align: center;*/
+/*    padding: 12px;*/
+/*    color: #111111;*/
+/*    border-bottom: 1px solid #e0e0e0;*/
+/*}*/
+
+/*.airplug_machining_data_entry__table tr:hover {*/
+/*    background: #e0f2f1;*/
+/*    transition: background-color 0.3s ease-in-out;*/
+/*}*/
+
+/*!* Search Bar *!*/
+/*.airplug_machining_search-container input[type="text"] {*/
+/*    padding: 10px;*/
+/*    width: 250px;*/
+/*    border: 2px solid #004d40;*/
+/*    border-radius: 8px;*/
+/*    margin: 10px;*/
+/*}*/
+
+/*.airplug_machining_search-container input[type="text"]:focus {*/
+/*    outline: none;*/
+/*    border-color: #00796b;*/
+/*}*/
+
+/*!* Print Button *!*/
+/*.daily_data_entry_button {*/
+/*    background-color: #004d40;*/
+/*    color: #fff;*/
+/*    padding: 10px 20px;*/
+/*    border: none;*/
+/*    border-radius: 8px;*/
+/*    margin: 20px 0;*/
+/*    cursor: pointer;*/
+/*    transition: background 0.3s;*/
+/*}*/
+
+/*.daily_data_entry_button:hover {*/
+/*    background-color: #00796b;*/
+/*    transform: scale(1.05);*/
+/*}*/
+
+/*!* Keyframes for Animations *!*/
+/*@keyframes fadeIn {*/
+/*    0% {*/
+/*        opacity: 0;*/
+/*        transform: translateY(20px);*/
+/*    }*/
+/*    100% {*/
+/*        opacity: 1;*/
+/*        transform: translateY(0);*/
+/*    }*/
+/*}*/
+
+/*@keyframes slideUp {*/
+/*    0% {*/
+/*        transform: translateY(50px);*/
+/*        opacity: 0;*/
+/*    }*/
+/*    100% {*/
+/*        transform: translateY(0);*/
+/*        opacity: 1;*/
+/*    }*/
+/*}*/
+
+
+/*!* General Container Styling with Gradient Animation *!*/
+/*.airplug_machining_data_entry__container {*/
+/*    font-family: 'Arial', sans-serif;*/
+/*    padding: 20px;*/
+/*    !*min-height: 100vh;*!*/
+/*    !*background: linear-gradient(135deg, #e0f7fa, #e0f2f1);*!*/
+/*    background-size: 400% 400%;*/
+/*    animation: gradientAnimation 10s ease infinite; !* Add animation *!*/
+/*}*/
+
+/*!* Gradient Animation Keyframes *!*/
+/*@keyframes gradientAnimation {*/
+/*    0% {*/
+/*        background-position: 0 50%;*/
+/*    }*/
+/*    50% {*/
+/*        background-position: 100% 50%;*/
+/*    }*/
+/*    100% {*/
+/*        background-position: 0 50%;*/
+/*    }*/
+/*}*/
+
+/*!* Rest of the styles (from earlier) remain the same *!*/
+
+/* Responsive styles */
+@media (max-width: 940px) {
+    .airplug_machining-work-order-range-section h3 {
+        font-size: 1.8rem; /* Adjust the font size for smaller screens */
+    }
+
+    .airplug_machining-work-order-range-inputs {
+        flex-direction: column; /* Stack the inputs vertically */
+        gap: 10px; /* Reduce gap between inputs */
+    }
+
+    .airplug_machining-work-order-range-inputs label {
+        font-size: 0.9rem; /* Smaller font size for labels */
+        align-items: start;
+        /* margin: 0 auto; */
+        margin-left: 22px;
+
+
+    }
+
+    .airplug_machining-work-order-range-inputs input {
+        max-width: 100%; /* Input spans full width on smaller screens */
+    }
+
+    .airplug_machining-work-order-range-inputs button {
+        width: auto; /* Button spans full width */
+        padding: 12px; /* Increase padding for better tap area */
+    }
+}
+
+@media (max-width: 480px) {
+    .airplug_machining-work-order-range-section h3 {
+        text-align: center;
+        font-size: 18px; /* Further reduce font size for very small screens */
+    }
+
+    .airplug_machining-work-order-range-inputs {
+        gap: 8px; /* Reduce spacing further for compact view */
+    }
+
+    .airplug_machining-work-order-range-inputs input {
+        font-size: 0.9rem; /* Smaller input font size */
+        padding: 8px; /* Reduce padding for compact view */
+        margin-left: 10px;
+    }
+
+    .airplug_machining-work-order-range-inputs button {
+        font-size: 0.9rem; /* Adjust button font size */
+    }
+}
+
+/* 
+@media print {
+    div {
+        page-break-inside: avoid;
+    }
+
+    .print-header {
+        position: fixed;
+        top: 0;
+        right: 20px;
+        /* font-size: 16px; */
+        /* font-weight: bold; */
+    /* } */
+    /* th.ap_m_gborder {
+        word-wrap: break-word;
+        border: black solid 1px;
+        font-size: 14px;
+    } */
+/* }  */
+
+
+
+
+
+/* src/styles.css or a similar CSS file */
+
+/* :root {
+    --primary-color: #060606;
+    --secondary-color: #6c757d;
+    --success-color: #28a745;
+    --danger-color: #dc3545;
+    --warning-color: #ffc107;
+    --info-color: #17a2b8;
+    --background-color: #f8f9fa;
+    --text-color: #343a40;
+    --border-color: #dee2e6;
+    --disabled-color: #cccccc;
+    --disabled-text-color: #666666;
+} */
+
+body {
+    font-family: sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 10px;
+}
+
+.airplug_machining-work-order-range-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* .airplug_machining-work-order-range-section {
+    background-color:linear-gradient(135deg var(--gradient-start) var(--gradient-end));
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    padding: 20px;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    /* width: 800px; */
+/* }  */
+
+.airplug_machining-work-order-range-title1 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.airplug_machining-work-order-range-title2 {
+    color: var(--text-color);
+    /* margin-bottom: 20px; */
+    text-align: center;
+    margin-top: -10px;
+}
+
+.airplug_machining-work-order-range-inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    margin-left: 10px;
+}
+
+/* .airplug_machining-work-order-range-inputs label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    font-size: 1.1em;
+} */
+
+/* .airplug_machining-work-order-range-inputs input {
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+    padding: 8px;
+    font-size: 1em;
+    width: 200px;
+} */
+
+/* .airplug_machining-work-order-range-inputs button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;yyy
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+} */
+
+.airplug_machining-work-order-range-inputs button:disabled {
+    background-color: var(--highlight-color); /* Darker shade of blue for hover */
+}
+
+.airplug_machining-airplug-machining-chart-options-container {
+    margin-left: -20px;
+}
+.airplug-machining-airplug-machining-chart-selection-page {
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: space-between; /* Ensures button stays at bottom */
+    align-items: center;
+    height: 95vh;
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.airplug-airplug-machining-chart-card {
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+    color: var(--primary-color);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 2px solid #ccc;
+    width: 250px;
+    height:300px;
+    margin-bottom: 20px;
+}
+
+.airplug-card-title {
+    margin-top:5px;
+}
+
+
+.airplug-machining-chart-sections-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Ensures button stays at bottom */
+        align-items: center;
+        /* height: 94vh; */
+        /* background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end)); */
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        padding: 2rem;
+        margin-top: -3.8%;
+
+}
+
+.airplug-machining-chart-button {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin-top: 45px; /* Ensures button is pushed to bottom */
+}
+
+.airplug-machining-chart-button:hover {
+    background: var(--highlight-color);
+    transform: translateY(-3px);
+    box-shadow: 0 0 #252525;
+    border: #071b0a 2px solid;
+    transition: transform 0.3s ease, box-shadow 0.4s ease; /* Animation on hover */
+}
+
+.airplug-machining-chart-button:active {
+    transform: translateY(2px);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.airplug-machining-chart-back-button {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin-top: 10px; /* Ensures button is pushed to bottom */
+    margin-left: 20px;
+}
+
+.airplug-machining-chart-back-button:hover {
+    background: var(--highlight-color);
+    transform: translateY(-3px);
+    box-shadow: 0 0 #252525;
+    border: #071b0a 2px solid;
+    transition: transform 0.3s ease, box-shadow 0.4s ease; /* Animation on hover */
+}
+
+.airplug-machining-chart-back-button:active {
+    transform: translateY(2px);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+/* airplug-machining-chart options container */
+.airplug-machining-chart-options-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* airplug-machining-chart options header */
+.airplug-machining-chart-options-header {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin: 30px 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    margin-top: -42px;
+    margin-left: -60px;
+    margin-bottom: 40px;
+}
+
+/* airplug-machining-chart grid layout */
+.airplug-machining-chart-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Default: 4 columns */
+    gap: 30px;
+    width: 90%;
+    max-width: 1300px;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    height: 320px;
+    margin-top: -20px;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+/* airplug-machining-chart card */
+.airplug-machining-chart-card {
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+    color: var(--primary-color);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 2px solid #ccc;
+    width: 280px;
+}
+
+.airplug-machining-chart-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+}
+
+.airplug-machining-chart-card-title {
+    font-size: 2.1rem;
+    margin-bottom: 50px;
+}
+
+/* View airplug-machining-chart button positioned at bottom */
+.view-airplug-machining-chart-container {
+    margin-top: auto; /* Pushes it to the bottom */
+    padding-bottom: 20px;
+}
+
+.airplug-machining-chart-button {
+    background: var(--primary-color);
+    color: #fdfdfd;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin-top: auto; /* Ensures button is pushed to bottom */
+    /* margin-bottom: -40px; */
+}
+
+.airplug-machining-chart-button:hover {
+    background: var(--highlight-color);
+    transform: translateY(-3px);
+    box-shadow: 0 0 #252525;
+    border: #071b0a 2px solid;
+    transition: transform 0.3s ease, box-shadow 0.4s ease; /* Animation on hover */
+}
+
+.airplug-machining-chart-button:active {
+    transform: translateY(2px);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+.airplug-airplug-machining-chart-section-title {
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+/* General Button Styles */
+/* button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 0.8em;
+    transition: background-color 0.3s ease;
+    margin-top: 40px;
+    font-weight: bold;
+} */
+
+button:hover {
+    background-color: var(--highlight-color); /* Darker shade of blue for hover */
+    border: 2px solid black;
+}
+
+.airplug-machining-chart-button:disabled {
+    background-color: var(--text-color);
+    color: var(--secondary-color);
+    cursor: not-allowed;
+    pointer-events: none;
+    /* pointer-events: none; */
+}
+
+/* h3 {
+    margin-top: 20px;
+
+    color: var(--secondary-color);
+} */
+
+
+
+
+/* .airplug_machining_data_entry__table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.airplug_machining_data_entry__table th,
+.airplug_machining_data_entry__table td {
+    padding: 10px;
+    text-align: left; /* Align text to the left */
+    /* border: 1px solid #ddd; Add border for clarity */
+/* } */
+
+/* .airplug_machining_data_entry__table th {
+    background-color: #f2f2f2; /* Light background for headers */
+    /* font-weight: bold; Bold text for headers */
+/* } */
+
+/* .airplug_machining_data_entry__table tr:hover { */
+    /* background-color: #f1f1f1; Highlight row on hover */
+/* } */
+
+
+
+.chart-button-disabled {
+    opacity: 0.5;
+    /* filter: blur(0.5px); */
+    cursor: not-allowed;
+    pointer-events: none;
+    
+}
+.airplug-machining-chart-button{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.airplug-machining-chart-button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Adjust as needed */
+  }
+  
+  .airplug-machining-chart-button-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; /* Adjust as needed */
+  }
+
+.airplug-machining-chart-options{
+    display: flex;
+    gap:30px;
+}
+.airplug-machining-chart-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

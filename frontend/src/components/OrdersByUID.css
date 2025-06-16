@@ -1,0 +1,371 @@
+/* Light gradient background */
+body {
+    
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main container */
+.order-main-container {
+    width: 75%;
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    /* gap: 20px; */
+}
+
+/* Form and Order sections */
+.content-container,
+.orders-section {
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+    background-size: cover;
+    /* background: #ffffff08; */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.89);
+    margin-top: 2%;
+    padding-top:2rem;
+}
+
+
+.w_back-button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+    margin-top: -1%;
+    margin-left:-0.5;
+    margin-bottom: 3%;
+}
+
+.w_back-button:hover {
+    background-color: var(--highlight-color);
+}
+/* Form container */
+.form-section {
+    display: flex;
+    justify-content: center;
+}
+
+.order-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;
+}
+
+/* Input fields */
+.input-group {
+    /* width: 100%; */
+    margin-bottom: 10px;
+
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-top: -2rem;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+}
+
+
+#uid-input {
+    width: 100%;
+    font-size: 16px;
+    /* padding: 10px; */
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+
+}
+
+
+/* Dropdowns */
+.order-dropdown-group {
+    width: 100%;
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 30px;
+    margin-bottom: 2rem;
+}
+
+.order-dropdown {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 16px;
+    background: #ffffff;
+}
+
+/* Fetch button */
+.btn-fetch {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 25%;
+    transition: background 0.3s ease;
+}
+
+.btn-fetch:hover {
+    background: var(--highlight-color);
+}
+
+/* Orders section */
+.orders-container {
+    text-align: center;
+}
+
+/* Table */
+.orders-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: var(--secondary-color);
+}
+
+.orders-table td {
+    padding: 12px;
+    border: 1px solid #151516;
+    /* text-align: start; */
+    color: var(--primary-color);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+.order-work-no {
+    text-align: start;
+    line-height: 130%;
+}
+.orders-table th {
+    padding: 12px;
+    background: var(--secondary-color);
+    font-weight: bold;
+    border: 1px solid #151516;
+
+}
+
+/* No orders message */
+.no-orders {
+    text-align: center;
+    font-size: 18px;
+    color: #6c757d;
+}
+
+/* Error message */
+.error-text {
+    color: red;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+
+
+.order-title2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: -1%;
+    font-size:2.5rem;
+    color: var(--primary-color);
+}
+
+/* New row styling */
+.input-row {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.input-group {
+    flex: 1;
+}
+
+/* Existing styles with adjustments */
+/* .input-field {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #191a1a;
+    border-radius: 4px;
+    font-size: 1rem;
+} */
+
+.input-field:hover {
+    border: 2px solid #191a1a;
+}
+
+.order-dropdown {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #151516;
+    border-radius: 4px;
+    background: white;
+    font-size: 1rem;
+    /* appearance: none; */
+}
+
+
+
+.order-dropdown:hover {
+    border: 2px solid #191a1a;
+
+}
+/* .order-dropdown-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+} */
+
+
+.form-label1{
+    text-align: start;
+}
+
+
+
+
+datalist {
+    position: absolute;
+    background: white;
+    border: 1px solid #bdc3c7;
+    border-radius: 0 0 4px 4px;
+    border-top: none;
+    width: 100%;
+    z-index: 100;
+}
+
+datalist option {
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+datalist option:hover {
+    background-color: #f8f9fa;
+}
+
+
+
+.order-button-group {
+    display: flex;
+    gap: 70px; /* Space between buttons */
+    justify-content: center; /* Center the buttons */
+    margin-top: 15px;
+    width: 90%;
+    margin-left: 83%;
+  }
+  
+  .btn-fetch,
+  .btn-navigate {
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btn-fetch {
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+  .btn-navigate {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 30%;
+    transition: background 0.3s ease;
+  }
+  
+/* Rest of your existing CSS remains unchanged */
+
+/* Add these styles */
+.btn-graph {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .btn-graph:hover {
+    background-color: #7B1FA2;
+  }
+  
+  .graph-container {
+    width: relative;
+    margin-top: 30px;
+    /* margin-right: 20px; */
+    padding: 20px;
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+    border-radius: 8px;
+    box-shadow: 10px 10px black;
+  }
+  
+  .graph-container h3 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .recharts-cartesian-axis-tick-value text {
+    font-size: 12px;
+  }
+
+
+  /* .graph-container {
+    width: 100%;
+    padding: 20px 0;
+    background-color: #e80c0c;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 20px 0;
+    border-radius: 8px;
+    overflow: hidden;
+  } */
+  
+  .recharts-surface {
+    transform: translateX(2.5%);
+  }
+  
+  .recharts-legend-wrapper {
+    width: 100% !important;
+    left: 0 !important;
+  }
+
+
+  .i-icon {
+    width: 14px;
+    height: 14px;
+    background-color: rgba(255, 255, 255, 0.56);
+    border-radius: 15px;
+    padding: 2px;
+}
+
+
+
+.customer-insights {
+    box-shadow: 10px 10px black;
+}

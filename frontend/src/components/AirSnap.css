@@ -1,0 +1,806 @@
+@import './colors.css';
+
+/* air_snap.css */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+
+/* Scrollable table for mobile */
+@media (max-width: 600px) {
+    .table-container {
+        overflow-x: initial;
+    }
+
+    .air_snap__table {
+        min-width: 600px; /* Set a minimum width for better scrolling */
+    }
+}
+
+@media print {
+    /* Set page orientation to landscape */
+    @page {
+        size: landscape;
+    }
+
+    table {
+        width: 100%;
+    }
+}
+
+.air_snap_head {
+    background: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    position: sticky;
+    top: 0;
+}
+
+
+/* General styles for the air_snap */
+.air_snap__form-container {
+    /* max-width: 90%; */
+    padding: 20px;
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end)); /* Gradient background */
+    border-radius: 8px;
+    box-shadow: 10px 10px black;
+    display: grid;
+    font-family: "Poppins", sans-serif;
+    margin: 20px auto 30px;
+    /*box-shadow: 15px, 15px;*/
+}
+
+
+/* .air_snap__form-container {
+    background-image: url("/public/grunge-watercolor-background-using-pastel-colours_1048-6530.jpg");
+} */
+
+
+.airsnap-back-button {
+    padding: 10px 60px; /* Adjusted padding for better appearance */
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    /*transition: background-color 0.3s;*/
+    /* margin-right: -80%; */
+    align-items: start;
+    width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s; /* Animation on hover */
+}
+
+.airsnap-back-button:hover {
+    border: 2px solid var(--primary-color);
+    background-color: var(--highlight-color);
+}
+
+.air_snap__form-container h2 {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 35px;
+    margin-top: -0px;
+    margin-bottom: -20px;
+}
+
+.air_snap__form-container h3 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.air_snap__data-container h3 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.air_snap__form {
+    /*display: grid;*/
+    display: flex;
+    /*grid-template-columns: 1fr;*/
+    flex-wrap: wrap;
+    align-items: center;
+    /* gap: 15px; */
+    /*justify-content: space-evenly;*/
+    padding: 10px 40px;
+    padding-left: 100px;
+}
+
+/* Updated input styles */
+.air_snap_input {
+    padding: 10px;
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    /*width: 100%; !* Ensure inputs take full width of their container *!*/
+    /* background-color: var(--secondary-color); */
+    color: var(--primary-color);
+    margin: auto 5% 20px auto;
+}
+
+.air_snap_inputp {
+    padding: 10px;
+    margin: auto 150px 20px 0;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    width: 110%; /* Ensure inputs take full width of their container */
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    /*margin-right: 15%;*/
+}
+
+.air_snap_input:focus {
+    border: 3px solid var(--primary-color);
+}
+
+/* Button styles */
+.air_snap_button {
+    padding: 10px 60px; /* Adjusted padding for better appearance */
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    /*transition: background-color 0.3s;*/
+    margin: 10px 20px; /* Adjusted margins for better spacing */
+    width: 217px;
+    box-shadow: 10px 10px black;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s; /* Animation on hover */
+}
+
+.air_snap_button:hover {
+    background-color: var(--highlight-color); /* Change to highlight color on hover */
+    box-shadow: 0 0 #252525;
+    border: #071b0a 2px solid;
+    transition: transform 0.3s ease, box-shadow 0.4s ease; /* Animation on hover */
+}
+
+.air_snap__table {
+    width: 100%;
+    border-collapse: collapse;
+    /*margin-top: 20px;*/
+    border: 1px solid var(--primary-color);
+    overflow-x: auto;
+}
+
+.airsnap_table-container {
+    overflow-x: auto;
+    overflow-y: auto;
+    /* height: 70vh; */
+    margin-top: 30px;
+    background-color: var(--no-data-background);
+}
+
+
+.airsnap_table-container th td {
+    overflow-x: auto;
+    overflow-y: auto;
+    height: 50vh;
+}
+
+
+td.remrk {
+    word-wrap: break-word; /* Ensures words wrap to the next line */
+    word-break: break-word; /* Breaks long words if needed */
+    white-space: pre-wrap; /* Preserves whitespace and allows wrapping */
+    max-width: 50px; /* Set a maximum width for the column */
+    overflow-wrap: break-word; /* Alternative for word-wrap (modern browsers) */
+}
+
+
+.air_snap_head {
+    position: sticky; /* Fixes the header */
+    top: 0; /* Sticks the header to the top */
+    background-color: var(--primary-color); /* Optional: Background color for the header */
+    z-index: 1; /* Ensures the header stays above the table rows */
+    border: 1px solid var(--border-color); /* Optional: Add borders */
+    border-collapse: collapse;
+}
+
+
+.air_snap__table th, td {
+    padding: 12px;
+    max-height: 10px;
+    /* text-align:center; */
+    border-right: 1px solid var(--text-color);
+    border-bottom: 1px solid var(--primary-color);
+    /* font-size: 14px; */
+    /* width: 10%; */
+}
+
+/* Add left border explicitly in case it's being overridden */
+.air_snap__table th:first-child,
+.air_snap__table td:first-child {
+    border-left: 1px solid var(--border-color);
+}
+
+.air_snap__table th {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-left: 1px solid var(--text-color);
+    border-top: 2px solid var(--text-color);
+}
+
+.air_snap__table tr:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.air_snap_label {
+    font-size: 18px;
+    color: var(--primary-color);
+    font-weight: 600;
+    padding: 0 10px;
+    margin: 0 40px 0 10px;
+    /*width: 25%;*/
+
+}
+
+.label_size {
+    margin-left: 20px;
+}
+
+
+.air_snap_labelp {
+    font-size: 18px;
+    color: var(--primary-color);
+    font-weight: 600;
+    padding: 0 10px;
+    margin: 0 60px 0 20px;
+    /*width: 25%;*/
+
+}
+
+.air_snap_label1 {
+    font-size: 18px;
+    color: var(--primary-color);
+    font-weight: 600;
+    padding: 0 10px;
+    margin: 0 20px 0 10px;
+    /*width: 212px;*/
+}
+
+@media (max-width: 768px) {
+    .air_snap__form {
+        grid-template-columns: 1fr 1fr; /* Stack inputs vertically on smaller screens */
+    }
+
+    .air_snap__container {
+        margin: 30px 20px 20px -8px;
+    }
+
+    .air_snap_label1 {
+        margin: 0 10px;
+        font-size: 18px;
+        color: var(--primary-color);
+        font-weight: 600;
+        padding: 0 10px;
+        /* margin-right: 20px; */
+    }
+
+    .air_snap_input {
+        width: 100%; /* Ensure full width on mobile */
+    }
+}
+
+.air_snap__tab-navigation {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 3cqh;
+    padding-top: 23px; /*Updated margins for better spacing */
+}
+
+.air_snap__tab {
+    padding: 10px 60px; /* Adjusted padding for better appearance */
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    margin: 10px 20px;
+    width: 80px;
+    text-align: center;
+    font-size: 18px;
+    box-shadow: 10px 10px black;
+}
+
+.air_snap__tab:hover,
+.air_snap__tab:active {
+    background-color: var(--highlight-color); /* Darker green on hover */
+    box-shadow: 0 0 #252525;
+    border: #071b0a 2px solid;
+    transition: transform 0.3s ease, box-shadow 0.4s ease; /* Animation on hover */
+
+}
+
+.air_snap__data-container {
+    /* max-width: 90%; */
+    font-family: "Poppins", sans-serif;
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end)); /* Gradient background */
+    border-radius: 8px;
+    box-shadow: 10px 10px black;
+    background-size: cover;
+    background-repeat: round;
+}
+
+/*.airsnap_table-container{*/
+/*  width: 1400px;*/
+/*}*/
+
+/*bootstrap icon styling*/
+/* .bi {
+  padding-right: 5px;
+  padding-left: 3px;
+} */
+
+/* Mobile specific styles */
+@media (max-width: 600px) {
+    /* Make form fields take full width */
+    .air_snap__form input,
+    select,
+    button {
+        width: 100%;
+        font-size: 14px; /* Reduce font size */
+        padding: 8px; /* Reduce padding */
+        margin-bottom: 10px;
+    }
+
+    /* Make table responsive */
+    .table-container {
+        width: 100%;
+        overflow-x: auto; /* Allow horizontal scrolling */
+    }
+
+    .air_snap__table {
+        width: 100%; /* Make table take full width */
+        font-size: 12px; /* Reduce font size for smaller screens */
+        min-width: 600px; /* Set minimum width for better scrolling */
+
+    }
+
+    th,
+    td {
+        padding: 4px; /* Reduce cell padding */
+        /* text-align: center; Center align text */
+    }
+
+    /* Reduce the overall size of text and buttons */
+    h1 {
+        font-size: 20px; /* Reduce heading font size */
+    }
+
+    button {
+        font-size: 14px; /* Smaller button font */
+        padding: 8px 12px; /* Adjust padding for better touch targets */
+    }
+
+    /* Stack buttons vertically */
+    .button-container {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
+.airsnap-qr-code {
+    text-align: center;
+    /* border-bottom: 1px dotted var(--text-color); */
+    width: 30px;
+}
+
+/*.airsnap-qr-code td {*/
+/*!*  height: 10px;*!*/
+/*!*width: 15px;*!*/
+/*}*/
+/* For small mobile screens */
+@media (max-width: 450px) {
+    input,
+    select,
+    button {
+        font-size: 12px; /* Smaller input text */
+        padding: 6px; /* Smaller padding */
+    }
+
+    table {
+        font-size: 10px; /* Even smaller table text */
+    }
+
+    button {
+        padding: 6px 10px; /* Adjust button size */
+    }
+
+    .air_snap__form-container {
+        width: 586px;
+        margin-right: 30px;
+        margin-left: 20px;
+    }
+
+    .air_snap__form {
+        /*width: 610px;*/
+        margin-left: -40px;
+    }
+
+    .air_snap__data-container {
+        width: 586px;
+        margin-right: 30px;
+        margin-left: 20px;
+    }
+
+    /* .air_snap__tab-navigation {
+      display: flex;
+      flex-direction: column;
+      width: 200px;
+      justify-content: flex-start;
+    } */
+    .air_snap_label1 {
+        font-size: 18px;
+        color: var(--primary-color);
+        font-weight: 600;
+        padding: 0 10px;
+        margin: 0 20px 0 10px;
+    }
+}
+
+.work-order-no {
+    font-weight: bold;
+    color: var(--primary-color);
+    text-align: left;
+    /* align-items: end; */
+}
+
+.date {
+    /* font-style: italic; */
+    color: var(--primary-color);
+    font-size: 0.9em;
+    font-weight: bold;
+    padding-left: 30px;
+    /*display: flex;*/
+    /* padding-left: 10px; */
+    align-items: end;
+    flex-direction: row;
+}
+
+.party-name {
+    color: var(--primary-color);
+    font-weight: 800;
+    /* padding-top: 15px; */
+    line-height: 20px;
+    display: flex;
+    padding-top: 10px;
+}
+
+.table-style {
+    width: 100%;
+
+}
+
+.unit-style {
+    width: 80%;
+}
+
+
+@media print {
+    @page {
+        margin: 1cm;
+    }
+
+    body {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+}
+
+.search-input {
+    padding: 15px;
+    margin: 10px;
+    width: 400px;
+    border-radius: 9px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(191, 225, 214);
+    font-size: 16px;
+}
+
+.search-container {
+    position: relative;
+}
+
+.search-input {
+    /*padding-left: 30px;  !* Adjust the space for the icon *!*/
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px 10px 10px 35px;
+}
+
+.search-icon {
+    position: absolute;
+    left: 10px; /* Adjust the position of the icon */
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #000000;
+    margin-left: 10px;
+}
+
+
+.error-message {
+    color: var(--error-color);
+    /*border: 1px solid red;*/
+    font-size: 20px;
+    margin-top: 80px;
+
+
+}
+
+/* Highlight label in red if there's an error */
+.input-error-label {
+    color: var(--error-color);
+}
+
+/* Add an asterisk to required fields */
+.required {
+    color: var(--error-color);
+    font-weight: bold;
+}
+
+/* Add border to the input field if there's an error */
+.input-error {
+    border: 2px solid var(--error-color);
+}
+
+
+/* General Styles */
+.air_snap__container {
+    width: 95%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--secondary-color); /* White background for the form */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    flex: 1;
+    margin-right: 10px; /* Space between fields */
+}
+
+.form-group:last-child {
+    margin-right: 0; /* Remove margin for the last item */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+/*input[type="text"],*/
+/*input[type="date"],*/
+/*select {*/
+/*    !* width: 100%; *!*/
+/*    !* padding: 10px; *!*/
+/*    !*border: 1px solid var(--text-color);*!*/
+/*    !*border-radius: 4px;*!*/
+/*}*/
+
+/*input[type="text"]:focus,*/
+/*input[type="date"]:focus,*/
+/*select:focus {*/
+/*    border-color: var(--text-color); !* Change border color on focus *!*/
+/*}*/
+
+/* Button Styles */
+.delete-button {
+    background-color: red; /* Change to your preferred color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px; /* Space above the button */
+}
+
+.delete-button:hover {
+    background-color: darkred; /* Darker shade on hover */
+}
+
+.delete-button:disabled {
+    background-color: gray; /* Disabled state */
+    cursor: not-allowed;
+}
+
+
+@media (min-width: 968px) {
+    .form-style1 {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    /* .partyname .air_ring_input {
+        width: 600px;
+    } */
+    .form-style2 {
+        display: flex;
+        flex-direction: row;
+        margin-right: 800px;
+
+    }
+
+    .form-style3 {
+        display: flex;
+        flex-direction: row;
+        float: left;
+        margin-right: 500px;
+        /* border-bottom:2px solid black; */
+        /* border-right-width:-500px; */
+    }
+
+    /* .units .air_ring_input {
+        width: 800px;
+    } */
+    .form-style4 {
+        display: flex;
+        flex-direction: row;
+        margin-right: auto;
+
+    }
+
+    .form-style5 {
+        display: flex;
+        flex-direction: row;
+        /* margin-right:400px; */
+
+    }
+
+    .formstyle5 {
+        display: flex;
+        flex-direction: row;
+        /* margin-right:auto; */
+        /* gap: 200px; */
+    }
+
+    .formstyle6 {
+        display: flex;
+        margin-top: -87px;
+        margin-left: 80px;
+    }
+
+    .form-labelsize {
+        margin-left: 80px;
+    }
+
+    .formstyle9 {
+        margin-top: -87px;
+        margin-left: 80px;
+    }
+
+    .form-style5 input {
+        width: 100px;
+    }
+
+    /* .form-style6 {
+        display: grid;
+        margin-right: 200px;
+        margin-left: 200px;
+    } */
+    .form-style7 {
+        display: flex;
+        margin-left: 100px;
+    }
+
+    .hr-line {
+        border: 0;
+        border-top: 2px solid var(--primary-color); /* Color of the line */
+        margin: 20px 0; /* Margin around the line */
+        width: 100%; /* Full width of the container */
+    }
+
+
+    .nominal {
+        margin-right: 0;
+    }
+
+    /* .slabel input {
+        width: 100px;
+    } */
+    .slabel {
+        width: 150px;
+        margin-right: 0;
+    }
+
+    .slabel input {
+        width: 90px;
+        margin-right: 0;
+    }
+
+
+    .vlabel input {
+        width: 90px;
+        margin-left: -40px;
+        margin-right: 0;
+        border: 1px solid var(--primary-color);
+    }
+
+    .form-labelsize {
+        display: flex;
+    }
+}
+
+
+/* /////////////////////////////////////////////// */
+.delete-btn {
+    background: #fd020b;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    font-weight: 700;
+}
+
+.delete-btn:hover {
+    background: #fc1b03;
+}
+
+
+
+.delete-all-btn {
+    font-size:18px;
+    font-weight:600;
+    background-color: #f32708;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: none;
+    margin-top: 10px;
+    border: 1px solid black;
+    transition: background 0.2s ease;
+    font-weight: 700;
+}
+
+.delete-all-btn:hover {
+    background: #fc1b03;
+}
+
+
+.airsnap-update-btn {
+    font-size:18px;
+    font-weight:600;
+    background-color: #08aa1e;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: none;
+    margin-top: 10px;
+    margin-right: 20px;
+    border: 1px solid black;
+    transition: background 0.2s ease;
+    font-weight: 700;
+}
+
+.airsnapupdate-btn:hover {
+    background: #fc1b03;
+}
